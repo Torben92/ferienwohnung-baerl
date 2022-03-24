@@ -1,0 +1,352 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: "Catamaran", "sans-serif", "Verdana", "Arial", "Helvetica";
+}
+
+header{
+    position: sticky;
+    /*font-family: "Comic Sans MS";*/
+    top: 0;
+    background-color: #606766;
+}
+
+.headercontainer {
+    display: flex;
+    padding: 20px 0 0 20px;
+    margin: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.headercontainer a{
+    color: #FFFFFF;;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.headerliste {
+    padding: 4px 8px;
+}
+
+.headerliste li {
+    display: inline;            /* Listenelemente nebeneinander */
+    list-style-type: none;      /* Aufzählungszeichen entfernen */
+}
+
+.headerliste a:hover,
+#index #navi01 a,
+#galerie #navi02 a,
+#preise #navi03 a,
+#kontakt #navi04 a {
+    text-decoration: underline;         /* Unterstreichung entfernen */
+}
+
+
+/*Abstand Listenelemente*/
+#navi04,
+#navi03,
+#navi02 {
+    margin-left: 30px;
+}
+
+
+/*Header Ende*/
+
+/*Body Start*/
+
+/*Überschrift*/
+
+.hometopic {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #606766;
+}
+
+.topic {
+    font-family: Arial, sans-serif;
+    font-size: 36px;                /*Größe*/
+    color: #FFFFFF;                 /*Farbe*/
+}
+
+/*Intro*/
+
+
+.introcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 60px 60px;
+    margin: 0 auto;
+}
+
+.introitem {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.introbox{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.introbild {
+    width: 60%;
+}
+
+.introliste li{
+    padding-left: 10px;
+    text-align: left;
+    font-size: 18px;
+}
+/*Intro ende
+
+Start Balken
+*/
+.balkencontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.grey {
+    background-color: #606766;
+    color: #FFFFFF;
+
+}
+
+.brightgrey {
+    background-color: #E2E2E2;
+    padding: 120px 60px 60px;
+}
+
+.grey .text {
+    color: #FFFFFF;
+}
+#galerie .topic,
+#preise .topic {
+    text-align: center;
+}
+
+.brightgrey .text {
+    color: #323335;
+}
+
+.text h2{
+    font-size: 36px;
+}
+
+.smallpic {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.smallpic img{
+    max-width: 75%;
+    height: auto;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+.white{
+    background-color: #FFFFFF;
+    padding: 120px 60px 60px;
+}
+
+.white .text{
+    color: rgb(96, 103,102);
+}
+
+.buttonline{
+    padding-top: 30px;
+}
+/*Balken ende
+
+Start Footer
+*/
+
+footer {
+    background-color: #606766;
+    font-size: 15px;
+}
+
+.footercontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.footercontainer a{
+    padding: 16px;
+    color: #FFFFFF;
+}
+
+.footercontainer a:hover{
+        color: #323335;
+}
+
+/*Fotogalerie*/
+
+.bildergalerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+}
+
+.galeriebox {
+    flex-shrink: 1;
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.galeriebild {
+    padding: 10px;
+    max-width: 90%;
+    height: auto;
+}
+
+
+hr {
+    background-color: #606766;
+    color: #FFFFFF;
+}
+
+
+.preisgerüst {
+    padding: 0 100px;
+}
+
+
+.preiscontainertop {
+    display: flex;
+    box-sizing: border-box;
+    border-top: 2px solid #FFFFFF;
+    flex-wrap: wrap;
+    padding: 20px 0 20px;
+}
+
+.preiscontainermid{
+    display: flex;
+    box-sizing: border-box;
+    border-top: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    flex-wrap: wrap;
+    padding: 20px 0 20px;
+}
+
+.preistext {
+    flex-basis: 50%;
+    color: #FFFFFF;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.inklusive {
+    font-size: smaller;
+}
+
+
+.preisbox {
+    display: flex;
+    justify-content: right;
+    flex-basis: 50%;
+}
+
+
+.preisbild {
+    max-width: 90%;
+}
+
+.aufenthalttext {
+    flex-basis: 50%;
+    color: #FFFFFF;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+
+.kontaktcontainer{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.kontaktbox {
+    flex-basis: 50%;
+}
+
+
+.kontakttext{
+    flex-basis: 50%;
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+}
+
+.textstyle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.kontaktbild{
+    max-width: 100%;
+}
+
+#kontakt,
+#preise,
+#galerie{
+    background-color: #606766;
+    color: #FFFFFF;
+}
+
+.impressumcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #606766;
+    padding: 100px 0;
+}
+
+
+.impressumcontainer h1{
+    font-size: 48px;
+}
+
+
+.linkbutton {
+    padding:5px 10px;
+    border: 1px solid #606766;
+    background: #606766; /*linear-gradient(#fff,#ccc);*/
+    color: #FFFFFF;
+    text-decoration:none;
+    border-radius: 8px;
+}
+
+.schutzcontainer{
+    padding: 100px
+}
+
+
+
+
+
+
+
+
+
